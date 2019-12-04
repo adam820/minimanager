@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-import logging
 import ffmpeg
-from getopt import getopt, GetoptError
+import logging
 import subprocess
 import sys
 
-from pathlib import Path
+from getopt import getopt, GetoptError
 from os import getenv
+from pathlib import Path
 from shutil import which
 
 def logging_init():
