@@ -1,0 +1,13 @@
+= Minimanager
+
+A wrapper script around ffmpeg, https://github.com/dcherednik/atracdenc[atracdenc], and https://github.com/vuori/linux-minidisc[netmdcli] for transferring tracks to a NetMD Minidisc device.
+
+Mostly for convenience, it runs through the steps of transcoding MP3 -> WAV -> ATRAC3 -> ATRAC3-in-WAV before sending it off to the device.
+
+== TODO
+* [ ] Support adding a directory's worth of files.
+* [ ] PROGRESS BARS
+* [ ] Nice-to-have: Time estimation?
+* [ ] Nice-to-have: Error recovery/duplicate check:
+** _Oops, failed transfers on this directory, re-transfer, but not songs that are already on the device._
+* [ ] Capacity-checking the disc before trying to copy files
